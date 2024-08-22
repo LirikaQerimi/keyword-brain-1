@@ -1,0 +1,1539 @@
+<!--
+Product: Metronic is a toolkit of UI components built with Tailwind CSS for developing scalable web applications quickly and efficiently
+Version: v9.0.4
+Author: Keenthemes
+Contact: support@keenthemes.com
+Website: https://www.keenthemes.com
+Support: https://devs.keenthemes.com
+Follow: https://www.twitter.com/keenthemes
+License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
+-->
+<!DOCTYPE html>
+<html class="h-full" data-theme="true" data-theme-mode="light" lang="en">
+ <head>
+  <title>
+    Keyword Brain
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="follow, index" name="robots"/>
+  <link href="https://keenthemes.com/metronic" rel="canonical"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Keyword Brain" name="description"/>
+  <meta content="@keenthemes" name="twitter:site"/>
+  <meta content="@keenthemes" name="twitter:creator"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Keyword Brain" name="twitter:title"/>
+  <meta content="Keyword Brain" name="twitter:description"/>
+  <meta content="assets/media/app/og-image.png" name="twitter:image"/>
+  <meta content="https://keenthemes.com/metronic" property="og:url"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="website" property="og:type"/>
+  <meta content="@keenthemes" property="og:site_name"/>
+  <meta content="Keyword Brain" property="og:title"/>
+  <meta content="Keyword Brain" property="og:description"/>
+  <meta content="assets/media/app/og-image.png" property="og:image"/>
+  <link href="assets/media/app/apple-touch-icon-dua.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="assets/media/app/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="assets/media/app/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="assets/media/app/favicon.ico" rel="shortcut icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/vendors/apexcharts/apexcharts.css" rel="stylesheet"/>
+  <link href="assets/vendors/keenicons/styles.bundle.css" rel="stylesheet"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+ </head>
+ <body class="antialiased flex h-full text-base text-gray-700 demo1 sidebar-fixed header-fixed bg-[#fefefe] dark:bg-coal-500">
+  <!-- Theme Mode -->
+  <script>
+   const defaultThemeMode = 'light'; // light|dark|system
+		let themeMode;
+
+		if ( document.documentElement ) {
+			if ( localStorage.getItem('theme')) {
+					themeMode = localStorage.getItem('theme');
+			} else if ( document.documentElement.hasAttribute('data-theme-mode')) {
+				themeMode = document.documentElement.getAttribute('data-theme-mode');
+			} else {
+				themeMode = defaultThemeMode;
+			}
+
+			if (themeMode === 'system') {
+				themeMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+
+			document.documentElement.classList.add(themeMode);
+		}
+  </script>
+  <!-- End of Theme Mode -->
+  <!-- Page -->
+  <!-- Main -->
+  <div class="flex grow">
+   <!-- Sidebar -->
+   <div class="sidebar dark:bg-coal-600 bg-light border-r border-r-gray-200 dark:border-r-coal-100 fixed top-0 bottom-0 z-20 hidden lg:flex flex-col items-stretch shrink-0" data-drawer="true" data-drawer-class="drawer drawer-start top-0 bottom-0" data-drawer-enable="true|lg:false" id="sidebar">
+    <div class="sidebar-header hidden lg:flex items-center relative justify-between px-3 lg:px-6 shrink-0" id="sidebar_header">
+     <a class="dark:hidden" href="html/demo1.html">
+      <img class="default-logo min-h-[22px] max-w-none" src="assets/media/app/dua_logo_coloreed.svg"/>
+      <img class="small-logo min-h-[22px] max-w-none" src="assets/media/app/apple-touch-icon-dua-mini.png"/>
+     </a>
+     <button class="btn btn-icon btn-icon-md size-[30px] rounded-lg border border-gray-200 dark:border-gray-300 bg-light text-gray-500 hover:text-gray-700 toggle absolute left-full top-2/4 -translate-x-2/4 -translate-y-2/4" data-toggle="body" data-toggle-class="sidebar-collapse" id="sidebar_toggle">
+      <i class="ki-filled ki-black-left-line toggle-active:rotate-180 transition-all duration-300">
+      </i>
+     </button>
+    </div>
+    <div class="sidebar-content flex grow shrink-0 py-5 pr-2" id="sidebar_content">
+     <div class="scrollable-y-hover grow shrink-0 flex pl-2 lg:pl-5 pr-1 lg:pr-3" data-scrollable="true" data-scrollable-dependencies="#sidebar_header" data-scrollable-height="auto" data-scrollable-offset="0px" data-scrollable-wrappers="#sidebar_content" id="sidebar_scrollable">
+      <!-- Sidebar Menu -->
+      <div class="menu flex flex-col grow gap-0.5" data-menu="true" data-menu-accordion-expand-all="false" id="sidebar_menu">
+
+       <div class="menu-item">
+        <div class="menu-label border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" href="" tabindex="0">
+         <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+          <i class="ki-filled ki-note-2 text-lg">
+          </i>
+         </span>
+         <span class="menu-title text-sm font-medium text-gray-800">
+          <a href="keyword-brain.html">Keyword Brain</a> 
+         </span>
+         
+        </div>
+       </div>
+      </div>
+      <!-- End of Sidebar Menu -->
+     </div>
+    </div>
+   </div>
+   <!-- End of Sidebar -->
+   <!-- Wrapper -->
+   <div class="wrapper flex grow flex-col">
+    <!-- Header -->
+    <header class="header fixed top-0 z-10 left-0 right-0 flex items-stretch shrink-0 bg-[#fefefe] dark:bg-coal-500" data-sticky="true" data-sticky-class="shadow-sm dark:border-b dark:border-b-coal-100" data-sticky-name="header" id="header">
+     <!-- Container -->
+     <div class="container-fixed flex justify-between items-stretch lg:gap-4" id="header_container">
+      <!-- Mobile Logo -->
+      <div class="flex gap-1 lg:hidden items-center -ml-1">
+       <a class="shrink-0" href="html/demo1.html">
+        <img class="max-h-[25px] w-full" src="assets/media/app/mini-logo.svg"/>
+       </a>
+       <div class="flex items-center">
+        <button class="btn btn-icon btn-light btn-clear btn-sm" data-drawer-toggle="#sidebar">
+         <i class="ki-filled ki-menu">
+         </i>
+        </button>
+       </div>
+      </div>
+      <!-- End of Mobile Logo -->
+     
+     </div>
+     <!-- End of Container -->
+    </header>
+    <!-- End of Header -->
+    <!-- Content -->
+    <main class="grow content pt-5" id="content" role="content">
+     <!-- Container -->
+     <div class="container-fixed" id="content_container">
+     </div>
+     <!-- End of Container -->
+     <!-- Container -->
+     <div class="container-fixed">
+      <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
+       <div class="flex flex-col justify-center gap-2">
+        <h1 class="text-xl font-semibold leading-none text-gray-900">
+            Keyword Brain
+        </h1>
+        <div class="flex items-center flex-wrap gap-1.5 font-medium">
+         <span class="text-md text-gray-700">
+          All Keywords:
+         </span>
+         <span class="text-md text-gray-800 font-medium me-2">
+          49,053
+         </span>
+        </div>
+       </div>
+       <div class="flex items-center gap-2.5">
+        <a class="btn btn-sm btn-light" href="#">
+         Import CSV
+        </a>
+        <a class="btn btn-sm btn-primary" href="#">
+         Add Keyword
+        </a>
+       </div>
+      </div>
+     </div>
+     <!-- End of Container -->
+     <!-- Container -->
+     <div class="container-fixed">
+      <div class="grid gap-5 lg:gap-7.5">
+       <div class="card card-grid min-w-full">
+        <div class="card-header flex-wrap gap-2">
+         <h3 class="card-title font-medium text-sm">
+          Showing 10 of 10 keywords
+         </h3>
+         <div class="flex flex-wrap gap-2 lg:gap-5">
+          <div class="flex">
+           <label class="input input-sm">
+            <i class="ki-filled ki-magnifier">
+            </i>
+            <input placeholder="Search keywords" type="text" value="">
+            </input>
+           </label>
+          </div>
+          <div class="flex flex-wrap gap-2.5">
+            <select class="select select-sm w-28" onchange="redirectToPage(this)">
+               <option value="">Category</option>
+               <option value="dating.html">Dating</option>
+               <option value="community.html">Community</option>
+               <option value="marriage.html">Marriage</option>
+               <option value="love.html">Love</option>
+           </select>
+           
+           <script>
+               function redirectToPage(select) {
+                   const value = select.value;
+                   if (value) {
+                       window.location.href = value;
+                   }
+               }
+           </script>
+           <select class="select select-sm w-28" onchange="redirectToPage(this)">
+            <option value="">
+             Language
+            </option>
+            <option value="german.html">
+             German
+            </option>
+            <option value="english.html">
+             English
+            </option>
+           </select>
+           <script>
+            function redirectToPage(select) {
+                const value = select.value;
+                if (value) {
+                    window.location.href = value;
+                }
+            }
+          </script>
+           <button class="btn btn-sm btn-outline btn-primary">
+            <i class="ki-filled ki-setting-4">
+            </i>
+            Filters
+           </button>
+          </div>
+         </div>
+        </div>
+        <div class="card-body">
+         <div data-datatable="true" data-datatable-page-size="20">
+          <div class="scrollable-x-auto">
+           <table class="table table-auto table-border" data-datatable-table="true">
+            <thead>
+             <tr>
+              <th class="w-[60px] text-center">
+               <input class="checkbox checkbox-sm" data-datatable-check="true" type="checkbox"/>
+              </th>
+              <th class="min-w-[300px]">
+               <span class="sort asc">
+                <span class="sort-label font-normal text-gray-700">
+                 Keyword
+                </span>
+                <span class="sort-icon">
+                </span>
+               </span>
+              </th>
+              <th class="min-w-[180px]">
+               <span class="sort">
+                <span class="sort-label font-normal text-gray-700">
+                 Language
+                </span>
+                <span class="sort-icon">
+                </span>
+               </span>
+              </th>
+              <th class="min-w-[180px]">
+               <span class="sort">
+                <span class="sort-label font-normal text-gray-700">
+                 Category
+                </span>
+                <span class="sort-icon">
+                </span>
+               </span>
+              </th>
+              <th class="min-w-[180px]">
+               <span class="sort">
+                <span class="sort-label font-normal text-gray-700">
+                    Search Volume
+                </span>
+                <span class="sort-icon">
+                </span>
+               </span>
+              </th>
+              <th class="min-w-[180px]">
+               <span class="sort">
+                <span class="sort-label font-normal text-gray-700">
+                    Rank
+                </span>
+                <span class="sort-icon">
+                </span>
+               </span>
+              </th>
+              <th class="min-w-[180px]">
+                <span class="sort">
+                 <span class="sort-label font-normal text-gray-700">
+                    Impressions
+                 </span>
+                 <span class="sort-icon">
+                 </span>
+                </span>
+               </th>
+               <th class="min-w-[180px]">
+                <span class="sort">
+                 <span class="sort-label font-normal text-gray-700">
+                    Clicks
+                 </span>
+                 <span class="sort-icon">
+                 </span>
+                </span>
+               </th>
+               <th class="min-w-[180px]">
+                <span class="sort">
+                 <span class="sort-label font-normal text-gray-700">
+                    Installs
+                 </span>
+                 <span class="sort-icon">
+                 </span>
+                </span>
+               </th>
+               <th class="min-w-[180px]">
+                <span class="sort">
+                 <span class="sort-label font-normal text-gray-700">
+                    Reg. Users
+                 </span>
+                 <span class="sort-icon">
+                 </span>
+                </span>
+               </th>
+              <th class="w-[60px]">
+              </th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td class="text-center">
+               <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="2"/>
+              </td>
+              <td>
+               <div class="flex items-center gap-2.5">
+                <div class="flex flex-col">
+                 <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                  dua global
+                 </a>
+                </div>
+               </div>
+              </td>
+              <td>
+               <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                  <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/germany.svg"/>
+                  German
+               </div>
+              </td>
+              <td>
+               <span class="badge badge-primary badge-outline rounded-[30px]">
+                <span class="size-1.5 rounded-full bg-primary me-1.5">
+                </span>
+                Community
+               </span>
+              </td>
+              <td>
+               <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                --
+               </div>
+              </td>
+              <td class="text-gray-800 font-normal">
+               1
+              </td>
+              <td class="text-gray-800 font-normal">
+               367
+              </td>
+              <td class="text-gray-800 font-normal">
+               67
+              </td>
+              <td class="text-gray-800 font-normal">
+               198
+              </td>
+              <td class="text-gray-800 font-normal">
+               2398
+              </td>
+              <td class="text-center">
+               <div class="menu flex-inline" data-menu="true">
+                <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                 <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                  <i class="ki-filled ki-dots-vertical">
+                  </i>
+                 </button>
+                 <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                  <div class="menu-item">
+                   <a class="menu-link" href="#">
+                    <span class="menu-icon">
+                     <i class="ki-filled ki-search-list">
+                     </i>
+                    </span>
+                    <span class="menu-title">
+                     View
+                    </span>
+                   </a>
+                  </div>
+                  <div class="menu-item">
+                   <a class="menu-link" href="#">
+                    <span class="menu-icon">
+                     <i class="ki-filled ki-file-up">
+                     </i>
+                    </span>
+                    <span class="menu-title">
+                     Export
+                    </span>
+                   </a>
+                  </div>
+                  <div class="menu-separator">
+                  </div>
+                  <div class="menu-item">
+                   <a class="menu-link" href="#">
+                    <span class="menu-icon">
+                     <i class="ki-filled ki-pencil">
+                     </i>
+                    </span>
+                    <span class="menu-title">
+                     Edit
+                    </span>
+                   </a>
+                  </div>
+                  <div class="menu-item">
+                   <a class="menu-link" href="#">
+                    <span class="menu-icon">
+                     <i class="ki-filled ki-copy">
+                     </i>
+                    </span>
+                    <span class="menu-title">
+                     Make a copy
+                    </span>
+                   </a>
+                  </div>
+                  <div class="menu-separator">
+                  </div>
+                  <div class="menu-item">
+                   <a class="menu-link" href="#">
+                    <span class="menu-icon">
+                     <i class="ki-filled ki-trash">
+                     </i>
+                    </span>
+                    <span class="menu-title">
+                     Remove
+                    </span>
+                   </a>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </td>
+             </tr>
+             <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="3"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     albanian weddings
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/united-states.svg"/>
+                   English
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-success badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-success me-1.5">
+                 </span>
+                 Marriage
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                  390
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                13
+               </td>
+               <td class="text-gray-800 font-normal">
+                54
+               </td>
+               <td class="text-gray-800 font-normal">
+                234
+               </td>
+               <td class="text-gray-800 font-normal">
+                98
+               </td>
+               <td class="text-gray-800 font-normal">
+                398
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="2"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     südländische männer
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/germany.svg"/>
+                   German
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-primary badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-primary me-1.5">
+                 </span>
+                 Community
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 480
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                1
+               </td>
+               <td class="text-gray-800 font-normal">
+                267
+               </td>
+               <td class="text-gray-800 font-normal">
+                52
+               </td>
+               <td class="text-gray-800 font-normal">
+                235
+               </td>
+               <td class="text-gray-800 font-normal">
+                12
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="3"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     wir passen nicht zusammen
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/germany.svg"/>
+                   German
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-success badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-success me-1.5">
+                 </span>
+                 Marriage
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 260
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                1
+               </td>
+               <td class="text-gray-800 font-normal">
+                54
+               </td>
+               <td class="text-gray-800 font-normal">
+                234
+               </td>
+               <td class="text-gray-800 font-normal">
+                84
+               </td>
+               <td class="text-gray-800 font-normal">
+                64
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="1"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     dating in valencia
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/united-states.svg"/>
+                   English
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-warning badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-warning me-1.5">
+                 </span>
+                 Dating
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 10
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                1
+               </td>
+               <td class="text-gray-800 font-normal">
+                634
+               </td>
+               <td class="text-gray-800 font-normal">
+                86
+               </td>
+               <td class="text-gray-800 font-normal">
+                349
+               </td>
+               <td class="text-gray-800 font-normal">
+                3291
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="4"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     liebe und horoskop
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/germany.svg"/>
+                   German
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-danger badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-danger me-1.5">
+                 </span>
+                 Love
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 --
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                22
+               </td>
+               <td class="text-gray-800 font-normal">
+                65
+               </td>
+               <td class="text-gray-800 font-normal">
+                673
+               </td>
+               <td class="text-gray-800 font-normal">
+                98
+               </td>
+               <td class="text-gray-800 font-normal">
+                28
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="4"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     first love marriage
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/united-states.svg"/>
+                   English
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-danger badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-danger me-1.5">
+                 </span>
+                 Love
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 880
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                8
+               </td>
+               <td class="text-gray-800 font-normal">
+                43
+               </td>
+               <td class="text-gray-800 font-normal">
+                843
+               </td>
+               <td class="text-gray-800 font-normal">
+                12
+               </td>
+               <td class="text-gray-800 font-normal">
+                62
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="2"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     dua premium
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/united-states.svg"/>
+                   English
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-primary badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-primary me-1.5">
+                 </span>
+                 Community
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 2
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                30
+               </td>
+               <td class="text-gray-800 font-normal">
+                30
+               </td>
+               <td class="text-gray-800 font-normal">
+                73
+               </td>
+               <td class="text-gray-800 font-normal">
+                38
+               </td>
+               <td class="text-gray-800 font-normal">
+                52
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="4"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                     albanische singles
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/germany.svg"/>
+                   German
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-danger badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-danger me-1.5">
+                 </span>
+                 Love
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 1
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                10
+               </td>
+               <td class="text-gray-800 font-normal">
+                72
+               </td>
+               <td class="text-gray-800 font-normal">
+                39
+               </td>
+               <td class="text-gray-800 font-normal">
+                273
+               </td>
+               <td class="text-gray-800 font-normal">
+                12
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+              <tr>
+               <td class="text-center">
+                <input class="checkbox checkbox-sm" data-datatable-row-check="true" type="checkbox" value="2"/>
+               </td>
+               <td>
+                <div class="flex items-center gap-2.5">
+                 <div class="flex flex-col">
+                  <a class="text-sm font-medium text-gray-900 hover:text-primary-active mb-px" href="#">
+                   dua global
+                  </a>
+                 </div>
+                </div>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                   <img alt="" class="rounded-full size-4 shrink-0" src="assets/media/flags/germany.svg"/>
+                   German
+                </div>
+               </td>
+               <td>
+                <span class="badge badge-primary badge-outline rounded-[30px]">
+                 <span class="size-1.5 rounded-full bg-primary me-1.5">
+                 </span>
+                 Community
+                </span>
+               </td>
+               <td>
+                <div class="flex items-center text-gray-800 font-normal gap-1.5">
+                 --
+                </div>
+               </td>
+               <td class="text-gray-800 font-normal">
+                1
+               </td>
+               <td class="text-gray-800 font-normal">
+                367
+               </td>
+               <td class="text-gray-800 font-normal">
+                67
+               </td>
+               <td class="text-gray-800 font-normal">
+                198
+               </td>
+               <td class="text-gray-800 font-normal">
+                2398
+               </td>
+               <td class="text-center">
+                <div class="menu flex-inline" data-menu="true">
+                 <div class="menu-item" data-menu-item-offset="0, 10px" data-menu-item-placement="bottom-end" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+                  <button class="menu-toggle btn btn-sm btn-icon btn-light btn-clear">
+                   <i class="ki-filled ki-dots-vertical">
+                   </i>
+                  </button>
+                  <div class="menu-dropdown menu-default w-full max-w-[175px]" data-menu-dismiss="true">
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-search-list">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      View
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-file-up">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Export
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-pencil">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Edit
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-copy">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Make a copy
+                     </span>
+                    </a>
+                   </div>
+                   <div class="menu-separator">
+                   </div>
+                   <div class="menu-item">
+                    <a class="menu-link" href="#">
+                     <span class="menu-icon">
+                      <i class="ki-filled ki-trash">
+                      </i>
+                     </span>
+                     <span class="menu-title">
+                      Remove
+                     </span>
+                    </a>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </td>
+              </tr>
+            </tbody>
+           </table>
+          </div>
+          <div class="card-footer justify-center md:justify-between flex-col md:flex-row gap-5 text-gray-600 text-2sm font-medium">
+           <div class="flex items-center gap-2 order-2 md:order-1">
+            Show
+            <select class="select select-sm w-16" data-datatable-size="true" name="perpage">
+            </select>
+            per page
+           </div>
+           <div class="flex items-center gap-4 order-1 md:order-2">
+            <span data-datatable-info="true">
+            </span>
+            <div class="pagination" data-datatable-pagination="true">
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       
+     </div>
+     <!-- End of Container -->
+    </main>
+    <!-- End of Content -->
+    
+   </div>
+   <!-- End of Wrapper -->
+  </div>
+  <!-- End of Main -->
+   
+  <!-- End of Page -->
+  <!-- Scripts -->
+  <script src="assets/js/core.bundle.js">
+  </script>
+  <script src="assets/vendors/apexcharts/apexcharts.min.js">
+  </script>
+  <script src="assets/js/layouts/demo1.js">
+  </script>
+  <!-- End of Scripts -->
+ </body>
+</html>
